@@ -9,6 +9,17 @@ import java.util.*;
  * A class that writes data to a text file, with buffering.
  */
 public class TextWriterApp{
+    
+    private String filenameOfOutputtedFile;
+
+    public String getFilenameOfOutputtedFile() {
+        return filenameOfOutputtedFile;
+    }
+
+    public void setFilenameOfOutputtedFile(String filenameOfOutputtedFile) {
+        this.filenameOfOutputtedFile = filenameOfOutputtedFile;
+    }
+    
 	
    public static void main(String[] args) throws IOException{
    	  boolean append = false;   // you can change this
@@ -35,4 +46,6 @@ public class TextWriterApp{
 	
 	  System.out.println("Wrote file to: " + data.getAbsolutePath());
    }
+   
+   
 }
